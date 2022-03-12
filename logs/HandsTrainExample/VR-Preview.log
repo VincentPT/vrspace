@@ -1,0 +1,65 @@
+LogTemp: Repeating last play command: VR Preview
+LogPlayLevel: PlayLevel: No blueprints needed recompiling
+LogHMD: Initializing OVRPlugin session
+LogHMD: Allocating Oculus 3648 x 1840 rendertarget swapchain
+PIE: New page: PIE session: HandsInteractionTrainMap (Mar 12, 2022, 10:05:08 PM)
+LogPlayLevel: Creating play world package: /Game/Usage/HandsTrainExample/Maps/UEDPIE_0_HandsInteractionTrainMap
+LogPlayLevel: PIE: StaticDuplicateObject took: (0.005301s)
+LogAIModule: Creating AISystem for world HandsInteractionTrainMap
+LogPlayLevel: PIE: World Init took: (0.000688s)
+LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Usage/HandsTrainExample/Maps/HandsInteractionTrainMap.HandsInteractionTrainMap to /Game/Usage/HandsTrainExample/Maps/UEDPIE_0_HandsInteractionTrainMap.HandsInteractionTrainMap (0.006071s)
+LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+LogAudioMixer: Display: Audio Mixer Platform Settings:
+LogAudioMixer: Display:     Sample Rate:                          48000
+LogAudioMixer: Display:     Callback Buffer Frame Size Requested: 1024
+LogAudioMixer: Display:     Callback Buffer Frame Size To Use:    1024
+LogAudioMixer: Display:     Number of buffers to queue:           2
+LogAudioMixer: Display:     Max Channels (voices):                32
+LogAudioMixer: Display:     Number of Async Source Workers:       0
+LogAudio: Display: AudioDevice MaxSources: 32
+LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+LogAudio: Display: Audio Reverb Plugin: None (built-in).
+LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+LogAudioMixer: Display: Initializing audio mixer.
+LogAudioMixer: Display: 0: FrontLeft
+LogAudioMixer: Display: 1: FrontRight
+LogAudioMixer: Display: 0: FrontLeft
+LogAudioMixer: Display: 1: FrontRight
+LogAudioMixer: Display: 0: FrontLeft
+LogAudioMixer: Display: 1: FrontRight
+LogAudioMixer: Display: Using Audio Device Headphones (Oculus Virtual Audio Device)
+LogAudioMixer: Display: Initializing Sound Submixes...
+LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+LogInit: FAudioDevice initialized.
+LogAudio: Display: Audio Device (ID: 5) registered with world 'HandsInteractionTrainMap'.
+LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+LogLoad: Game class is 'HandsTrainExampleMode_C'
+LogWorld: Bringing World /Game/Usage/HandsTrainExample/Maps/UEDPIE_0_HandsInteractionTrainMap.HandsInteractionTrainMap up for play (max tick rate 0) at 2022.03.12-15.05.08
+LogWorld: Bringing up level for play took: 0.001063
+LogOnline: OSS: Creating online subsystem instance for: :Context_4
+PIE: Server logged in
+PIE: Play in editor total start time 0.168 seconds.
+LogEngine: Changing dynamic resolution state.
+LogHMD: Allocating Oculus 3648 x 1840 depth rendertarget swapchain
+LogSkeletalMesh: Building Skeletal Mesh OculusHandMesh...
+LogSkeletalMesh: Built Skeletal Mesh [0.00s] /Game/Usage/HandsTrainExample/Maps/UEDPIE_0_HandsInteractionTrainMap.HandsInteractionTrainMap:PersistentLevel.HandsTrainExamplePawn_C_0.LeftHand.OculusHandMesh
+LogSkeletalMesh: Building Skeletal Mesh OculusHandMesh...
+LogSkeletalMesh: Built Skeletal Mesh [0.00s] /Game/Usage/HandsTrainExample/Maps/UEDPIE_0_HandsInteractionTrainMap.HandsInteractionTrainMap:PersistentLevel.HandsTrainExamplePawn_C_0.RightHand.OculusHandMesh
+LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+LogWorld: BeginTearingDown for /Game/Usage/HandsTrainExample/Maps/UEDPIE_0_HandsInteractionTrainMap
+LogSlate: Window 'HandsTrainSample Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+LogWorld: UWorld::CleanupWorld for HandsInteractionTrainMap, bSessionEnded=true, bCleanupResources=true
+LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+LogPlayLevel: Display: Shutting down PIE online subsystems
+LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+LogPlayLevel: Display: Destroying online subsystem :Context_4

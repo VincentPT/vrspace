@@ -1,0 +1,56 @@
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>if "C:\Users\Admin\AppData\Local\Android\Sdk" == "" set ANDROIDHOME=C:\Users\Admin\AppData\Local\Android\Sdk
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>set ADB=C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>set DEVICE=
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>if not "" == "" set DEVICE=-s
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>for /F "delims=" %A in ('C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe shell "echo $EXTERNAL_STORAGE"') do @set STORAGE=%A
+
+Uninstalling existing application. Failures here can almost always be ignored.
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  uninstall com.oculus.HandsTrainSample
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+
+Installing existing application. Failures here indicate a problem with the device (connection or storage permissions) and are fatal.
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  install HandsTrainSample-arm64.apk
+Performing Streamed Install
+Success
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  shell rm -r /sdcard/UE4Game/HandsTrainSample
+
+rm: /sdcard/UE4Game/HandsTrainSample: No such file or directory
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  shell rm -r /sdcard/UE4Game/UE4CommandLine.txt
+rm: /sdcard/UE4Game/UE4CommandLine.txt: No such file or directory
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  shell rm -r /sdcard/obb/com.oculus.HandsTrainSample
+rm: /sdcard/obb/com.oculus.HandsTrainSample: No such file or directory
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  shell rm -r /sdcard/Android/obb/com.oculus.HandsTrainSample
+rm: /sdcard/Android/obb/com.oculus.HandsTrainSample: No such file or directory
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  shell rm -r /sdcard/Download/obb/com.oculus.HandsTrainSample
+rm: /sdcard/Download/obb/com.oculus.HandsTrainSample: No such file or directory
+
+Installing new data. Failures here indicate storage problems (missing SD card or bad permissions) and are fatal.
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  push main.1.com.oculus.HandsTrainSample.obb /sdcard/obb/com.oculus.HandsTrainSample/main.1.com.oculus.HandsTrainSample.obb
+main.1.com.oculus.HandsTrainSample.obb: 1 file pushed, 0 skipped. 41.7 MB/s (53627196 bytes in 1.226s)
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>if "0" NEQ "0" goto Error
+
+Grant READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE to the apk for reading OBB file or game file in external storage.
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  shell pm grant com.oculus.HandsTrainSample android.permission.READ_EXTERNAL_STORAGE
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe  shell pm grant com.oculus.HandsTrainSample android.permission.WRITE_EXTERNAL_STORAGE
+
+Installation successful
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>goto:eof
+
+D:\Development\UnrealEngine-4.27_Quest\Samples\Oculus\HandsTrainSample\Build\Android_ETC2>
+
